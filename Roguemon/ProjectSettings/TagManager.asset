@@ -11,8 +11,8 @@ TagManager:
   - ground
   - Water
   - UI
-  - 
-  - 
+  - solidObjects
+  - GrassLayer
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: bacground
     uniqueID: 95171093
+    locked: 0
+  - name: foreground
+    uniqueID: 3548192845
     locked: 0
   - name: player
     uniqueID: 4190292025
