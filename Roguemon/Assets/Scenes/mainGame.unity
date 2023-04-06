@@ -28741,7 +28741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.05, y: 71.3}
+  m_AnchoredPosition: {x: 202, y: 63}
   m_SizeDelta: {x: 142.61, y: 142.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832614689
@@ -29099,7 +29099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214, y: -45}
+  m_AnchoredPosition: {x: -214, y: -88}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072483941
@@ -29253,7 +29253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1764678022
 AudioListener:
   m_ObjectHideFlags: 0
@@ -29392,8 +29392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000098705, y: -150.18}
-  m_SizeDelta: {x: 800, y: 102.39}
+  m_AnchoredPosition: {x: 2.0001, y: -201.67}
+  m_SizeDelta: {x: 800, y: 113.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812772422
 MonoBehaviour:
@@ -29660,7 +29660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &1943797118
 Camera:
   m_ObjectHideFlags: 0
@@ -29688,7 +29688,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.792392
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -29795,8 +29795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.99988, y: 49.51}
-  m_SizeDelta: {x: 798, y: 296.98}
+  m_AnchoredPosition: {x: 0.99988, y: 56.667}
+  m_SizeDelta: {x: 798, y: 403.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945562164
 MonoBehaviour:
@@ -29874,6 +29874,7 @@ MonoBehaviour:
   grasslayer:
     serializedVersion: 2
     m_Bits: 128
+  Canvas: {fileID: 871300517}
 --- !u!212 &1967075335
 SpriteRenderer:
   m_ObjectHideFlags: 0

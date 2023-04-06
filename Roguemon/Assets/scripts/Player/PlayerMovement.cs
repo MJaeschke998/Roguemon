@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     public float Movespeed;
@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public LayerMask solidObjectsLayer;
     public LayerMask grasslayer;
+    public Canvas Canvas;
 
 
     private void Awake() {
@@ -66,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         if(Physics2D.OverlapCircle(transform.position, 0.2f,grasslayer)!=null){
            if (Random.Range(1,101) <= 10){
                 Debug.Log("Encountered a pokemon!");
+                GetComponent<Canvas>().enabled = true;
             }
         }
     }
