@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class PlayerMovement : MonoBehaviour
 {
     public float Movespeed;
@@ -9,9 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 input;
     private Animator animator;
-    public LayerMask solidObjectsLayer;
+    public LayerMask solidObjects;
     public LayerMask grasslayer;
     public Canvas Canvas;
+    public event Action onEncounterd;
 
 
     private void Awake() {
@@ -21,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    public void HandleUpdate()
     {
         if(!isMoving){
 
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         CheckForEncounters();
     }
     private bool IsWalkable(Vector3 targetPos){
-        if(Physics2D.OverlapCircle(targetPos,0.3f, solidObjectsLayer) != null){
+        if(Physics2D.OverlapCircle(targetPos,0.2f, solidObjects) != null){
             return false;
         }
         return true;
@@ -65,9 +68,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckForEncounters(){
         if(Physics2D.OverlapCircle(transform.position, 0.2f,grasslayer)!=null){
-           if (Random.Range(1,101) <= 10){
+           if (UnityEngine.Random.Range(1,101) <= 10){
                 Debug.Log("Encountered a pokemon!");
-                GetComponent<Canvas>().enabled = true;
+                animator.SetBool("isMoving", false);
+                onEncounterd();
+                //GetComponent<Canvas>().enabled = true;
             }
         }
     }
